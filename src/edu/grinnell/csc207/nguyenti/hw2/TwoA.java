@@ -2,13 +2,27 @@ package edu.grinnell.csc207.nguyenti.hw2;
 
 /**
  * 
- * @authors nguyenti (Tiffany), goldstei1 (Daniel), lewismar (Mark), wheelere (Earnest)
+ * @author nguyenti (Tiffany)
+ * @author goldstei1 (Daniel)
+ * @author lewismar (Mark)
+ * @author wheelere (Earnest)
+ * 
  * CSC 207 (Rebelsky) Assignment 2
  *
  * Citations:
  * Unit Testing Reading and Lab found online at:
- *      http://www.cs.grinnell.edu/~rebelsky/Courses/CSC207/2013F/readings/unit-testing.html
- *      http://www.cs.grinnell.edu/~rebelsky/Courses/CSC207/2013F/labs/unit-testing.html
+ *     http://www.cs.grinnell.edu/~rebelsky/Courses/CSC207/2013F
+ *         /readings/unit-testing.html
+ *     http://www.cs.grinnell.edu/~rebelsky/Courses/CSC207/2013F
+ *         /labs/unit-testing.html
+ * In order to properly follow Java conventions, we used information
+ *     found online at:
+ *     http://www.oracle.com/technetwork/java/javase/documentation
+ *         /codeconvtoc-136057.html
+ * Sun Microsystems. (1999, April 20). Code conventions for the 
+ *     java tm programming language. Retrieved from:
+ *     http://www.oracle.com/technetwork/java/javase/documentation
+ *         /codeconvtoc-136057.html
  */
 
 
@@ -28,10 +42,10 @@ public class TwoA {
 	if (b == 0) {
 	    return false;
 	} //b==0
-	if(b == 1) {
+	if (b == 1) {
 	    return true;
 	} //b ==1
-	if(a % b == 0) {
+	if (a % b == 0) {
 	    return true;
 	} //a % b == 0
 	return false; //if not a multiple and hasn't satisfied the other cases
@@ -60,9 +74,9 @@ public class TwoA {
 	int sum = 0;
 	/**
 	 * This equation is true for all even n.
-	 * When an even is incremented to n+1, the result is the same
-	 * It's true for n = 2, and f(n+2) = (n/2)^2 + (n+1) = f(n) + (n+1)
-	 * This is equivalent to adding the next odd number when incremented by 2
+	 * When an even is incremented to n+1, the result is the same.
+	 * It's true for n = 2, and f(n+2) = (n/2)^2 + (n+1) = f(n) + (n+1).
+	 * This is equivalent to adding the next odd number when incremented by 2.
 	 */ 
 	if (n >= 0) {
 	    sum = (n / 2) * (n / 2);
@@ -88,9 +102,10 @@ public class TwoA {
     } //oddSumTo
 
     /**
-     * Takes an array of integers and checks if all of the elements in it are unique.
-     * Returns true if all elements are unique or false if any two elements are the 
-     * same.
+     * Takes an array of integers and checks if all of the elements
+     *     in it are unique.
+     * Returns true if all elements are unique or false if any two 
+     *     elements are the same.
      */
     public static boolean allDistinct(int[] ints) {
 	if (ints.length < 2) {
@@ -108,7 +123,8 @@ public class TwoA {
 
     /**
      * Takes an array of integers and reverses it.
-     * Returns the address of the array given, with the elements in reverse order.
+     * Returns the address of the array given, with the elements in
+     *     reverse order.
      */
     public static int[] reverseInts(int[] ints) {
 	for (int i = 0; i < ints.length/2; i++) {

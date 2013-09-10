@@ -44,7 +44,8 @@ public class Rational {
     }
 
     /*
-     * Observer, does not change any values stored but returns the numerator/denominator
+     * Observer, does not change any values stored but returns
+     *     the numerator/denominator
      */
     public float computeValue(){
 	return (float) numerator/denominator;

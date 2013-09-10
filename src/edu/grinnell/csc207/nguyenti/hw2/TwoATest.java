@@ -106,7 +106,9 @@ public class TwoATest {
 	assertArrayEquals("1 through 5", reverseArrayOne, TwoA.reverseInts(arrayOne));
 	assertArrayEquals("1 through 5 reverse", arrayTwo, TwoA.reverseInts(reverseArrayOne));
 	/**
-	 * We found assertArrayEquals on www.stackoverflow/questions/4228161/comparing-arrays-in-junit-assertions-concise-built-in-way
+	 * We found assertArrayEquals on:
+	 *     www.stackoverflow/questions/4228161
+	 *         /comparing-arrays-in-junit-assertions-concise-built-in-way
 	 */
     } //reverseInts
 
